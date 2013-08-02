@@ -1,9 +1,9 @@
-PROGRAMMER = avrisp2
-#PROGRAMMER = usbtiny
-CPU_GCC = attiny44
-CPU_DUDE = t44
+#PROGRAMMER = avrisp2
+PROGRAMMER = usbtiny
+CPU_GCC = attiny24
+CPU_DUDE = t24
 
-F_CPU = 1000000
+F_CPU = 8000000
 
 CDEFS = -DF_CPU=$(F_CPU)
 CFLAGS = -mmcu=$(CPU_GCC) $(CDEFS) -Wall -Os
