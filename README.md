@@ -1,4 +1,10 @@
-PCB Exposure Control
+Laborssteuerung
+===============
+
+Steuergeräte für unser PCB-Labor
+
+
+* PCB Exposure Control (alex)
 ====================
 We have a box with 40 UV LEDs …
 
