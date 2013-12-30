@@ -13220,6 +13220,7 @@ drill 1.4 mm</description>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 <part name="C4" library="resistor" deviceset="CPOL-EU" device="E2.5-7" value="470µ"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="025-024X044" value="100n"/>
+<part name="U$5" library="n39" deviceset="I3C_PORT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13257,10 +13258,11 @@ drill 1.4 mm</description>
 <instance part="LSP5" gate="1" x="124.46" y="35.56" rot="R180"/>
 <instance part="LSP6" gate="1" x="119.38" y="35.56" rot="R180"/>
 <instance part="GND1" gate="1" x="50.8" y="-38.1"/>
-<instance part="GND4" gate="1" x="0" y="-33.02"/>
-<instance part="SUPPLY4" gate="G$1" x="-30.48" y="-22.86" rot="R90"/>
-<instance part="C4" gate="G$1" x="-17.78" y="-25.4"/>
-<instance part="C5" gate="G$1" x="-7.62" y="-25.4"/>
+<instance part="GND4" gate="1" x="5.08" y="68.58"/>
+<instance part="SUPPLY4" gate="G$1" x="-25.4" y="78.74" rot="R90"/>
+<instance part="C4" gate="G$1" x="-12.7" y="76.2"/>
+<instance part="C5" gate="G$1" x="-2.54" y="76.2"/>
+<instance part="U$5" gate="G$1" x="-60.96" y="-17.78"/>
 </instances>
 <busses>
 </busses>
@@ -13318,9 +13320,9 @@ drill 1.4 mm</description>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <pinref part="C4" gate="G$1" pin="+"/>
-<wire x1="-27.94" y1="-22.86" x2="-17.78" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-22.86" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="-17.78" y="-22.86"/>
+<wire x1="-22.86" y1="78.74" x2="-12.7" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="78.74" x2="-2.54" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-12.7" y="78.74"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -13364,10 +13366,10 @@ drill 1.4 mm</description>
 <segment>
 <pinref part="C4" gate="G$1" pin="-"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-17.78" y1="-30.48" x2="-7.62" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="-30.48" x2="0" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-7.62" y="-30.48"/>
+<wire x1="-2.54" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-2.54" y="71.12"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -13435,6 +13437,10 @@ drill 1.4 mm</description>
 <wire x1="-7.62" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
 <label x="0" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SCL"/>
+<wire x1="-50.8" y1="-10.16" x2="-45.72" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="REQ" class="0">
 <segment>
@@ -13451,6 +13457,10 @@ drill 1.4 mm</description>
 <wire x1="-7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
 <label x="0" y="5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="REQ"/>
+<wire x1="-50.8" y1="-20.32" x2="-45.72" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -13466,6 +13476,10 @@ drill 1.4 mm</description>
 <pinref part="U$4" gate="G$1" pin="MOSI"/>
 <wire x1="-7.62" y1="0" x2="-2.54" y2="0" width="0.1524" layer="91"/>
 <label x="0" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SDA"/>
+<wire x1="-50.8" y1="-15.24" x2="-45.72" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="L_OUT" class="0">
