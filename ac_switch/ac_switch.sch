@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -132,6 +132,14 @@
 <wire x1="3.048" y1="-4.318" x2="-3.048" y2="-4.318" width="0.127" layer="21"/>
 <wire x1="-3.048" y1="-4.318" x2="-3.048" y2="4.318" width="0.127" layer="21"/>
 </package>
+<package name="WAGO_734_262">
+<pad name="P$1" x="-1.95" y="-5.25" drill="1.5"/>
+<pad name="P$2" x="1.95" y="-5.25" drill="1.5"/>
+<wire x1="-5" y1="-5.25" x2="-5" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-5" y1="5.25" x2="5" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-5" y1="-5.25" x2="5" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="5" y1="-5.25" x2="5" y2="5.25" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_MN_KT">
@@ -209,6 +217,14 @@
 <wire x1="-12.7" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 <pin name="GND" x="-7.62" y="-10.16" visible="off" length="point" direction="pwr" rot="R90"/>
 <pin name="VCC" x="-7.62" y="10.16" visible="off" length="point" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="WAGO_734_262">
+<pin name="P$1" x="-2.54" y="2.54" length="middle" rot="R270"/>
+<pin name="P$2" x="0" y="2.54" length="middle" rot="R270"/>
+<wire x1="-5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -303,6 +319,27 @@
 <connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WAGO_734_262">
+<description>WAGO 743-262
+
+Print-Stiftleiste, Mini, RM 3,81, gewinkelt, 2-polig
+
+http://www.reichelt.de/?ARTICLE=45978</description>
+<gates>
+<gate name="G$1" symbol="WAGO_734_262" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="WAGO_734_262">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13021,105 +13058,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-samtec">
-<description>&lt;b&gt;Samtec Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SSW-102-02-S-S">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST SOCKET&lt;/b&gt;&lt;p&gt;
-Source: Samtec SSW.pdf</description>
-<wire x1="-2.669" y1="1.155" x2="2.669" y2="1.155" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="1.155" x2="2.669" y2="-1.155" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-1.155" x2="-2.669" y2="-1.155" width="0.2032" layer="21"/>
-<wire x1="-2.669" y1="-1.155" x2="-2.669" y2="1.155" width="0.2032" layer="21"/>
-<wire x1="-2.015" y1="0.755" x2="-0.515" y2="0.755" width="0.2032" layer="51"/>
-<wire x1="-0.515" y1="0.755" x2="-0.515" y2="-0.745" width="0.2032" layer="51"/>
-<wire x1="-0.515" y1="-0.745" x2="-2.015" y2="-0.745" width="0.2032" layer="51"/>
-<wire x1="-2.015" y1="-0.745" x2="-2.015" y2="0.755" width="0.2032" layer="51"/>
-<wire x1="0.525" y1="0.755" x2="2.025" y2="0.755" width="0.2032" layer="51"/>
-<wire x1="2.025" y1="0.755" x2="2.025" y2="-0.745" width="0.2032" layer="51"/>
-<wire x1="2.025" y1="-0.745" x2="0.525" y2="-0.745" width="0.2032" layer="51"/>
-<wire x1="0.525" y1="-0.745" x2="0.525" y2="0.755" width="0.2032" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="1" diameter="1.5" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="1" diameter="1.5" shape="octagon"/>
-<text x="-1.778" y="-3.048" size="1.6764" layer="21" font="vector">1</text>
-<text x="-3.175" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="SSW-102-02-S-S-RA">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST SOCKET&lt;/b&gt;&lt;p&gt;
-Source: Samtec SSW.pdf</description>
-<wire x1="-2.669" y1="-8.396" x2="2.669" y2="-8.396" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-8.396" x2="2.669" y2="-0.106" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-0.106" x2="-2.669" y2="-0.106" width="0.2032" layer="21"/>
-<wire x1="-2.669" y1="-0.106" x2="-2.669" y2="-8.396" width="0.2032" layer="21"/>
-<pad name="1" x="-1.27" y="1.524" drill="1" diameter="1.5" shape="octagon"/>
-<pad name="2" x="1.27" y="1.524" drill="1" diameter="1.5" shape="octagon"/>
-<text x="-1.865" y="-7.65" size="1.6764" layer="21" font="vector">1</text>
-<text x="-3.175" y="-7.62" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="0" x2="-1.016" y2="1.778" layer="51"/>
-<rectangle x1="1.016" y1="0" x2="1.524" y2="1.778" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FPINV">
-<wire x1="-1.778" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.508" x2="-1.778" y2="-0.508" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.048" y="0.762" size="1.524" layer="95" rot="R180">&gt;NAME</text>
-<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="FPIN">
-<wire x1="-1.778" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.508" x2="-1.778" y2="-0.508" width="0.254" layer="94"/>
-<text x="-3.048" y="0.762" size="1.524" layer="95" rot="R180">&gt;NAME</text>
-<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SSW-102-02-S-S" prefix="X">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST SOCKET&lt;/b&gt;&lt;p&gt;
-Source: Samtec SSW.pdf</description>
-<gates>
-<gate name="-1" symbol="FPINV" x="0" y="0" addlevel="always"/>
-<gate name="-2" symbol="FPIN" x="0" y="-2.54" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="SSW-102-02-S-S">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="SSW-102-02-S-S" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="11P9351" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-RA" package="SSW-102-02-S-S-RA">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="SSW-102-02-S-S-RA" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="11P9352" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="solpad">
 <description>&lt;b&gt;Solder Pads/Test Points&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -13207,8 +13145,8 @@ drill 1.4 mm</description>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 <part name="C4" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="68µ"/>
 <part name="U$5" library="n39" deviceset="I3C_PORT" device=""/>
-<part name="X2" library="con-samtec" deviceset="SSW-102-02-S-S" device="-RA"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0204/7" value="1,5K"/>
+<part name="U$6" library="n39" deviceset="WAGO_734_262" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13245,9 +13183,8 @@ drill 1.4 mm</description>
 <instance part="SUPPLY4" gate="G$1" x="-25.4" y="78.74" rot="R90"/>
 <instance part="C4" gate="G$1" x="-12.7" y="76.2"/>
 <instance part="U$5" gate="G$1" x="-60.96" y="-17.78"/>
-<instance part="X2" gate="-1" x="129.54" y="20.32" rot="R180"/>
-<instance part="X2" gate="-2" x="129.54" y="22.86" rot="R180"/>
 <instance part="R3" gate="G$1" x="35.56" y="17.78" rot="R180"/>
+<instance part="U$6" gate="G$1" x="132.08" y="22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13455,9 +13392,9 @@ drill 1.4 mm</description>
 <label x="124.46" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-2" pin="1"/>
-<wire x1="127" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
 <label x="121.92" y="22.86" size="1.778" layer="95"/>
+<pinref part="U$6" gate="G$1" pin="P$2"/>
+<wire x1="124.46" y1="22.86" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -13490,9 +13427,9 @@ drill 1.4 mm</description>
 <label x="96.52" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-1" pin="1"/>
-<wire x1="127" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
 <label x="116.84" y="20.32" size="1.778" layer="95"/>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="124.46" y1="20.32" x2="129.54" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
