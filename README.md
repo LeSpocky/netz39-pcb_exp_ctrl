@@ -3,6 +3,10 @@ Laborssteuerung
 
 Steuergeräte für unser PCB-Labor
 
+# AC Switch
+µC-Steuerbares Relais für 230V-Geräte mit Feedback zum Stromfluss
+Anschluss über I³C
+
 
 * PCB Exposure Control (alex)
 ====================
