@@ -13132,7 +13132,7 @@ drill 1.4 mm</description>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
 <part name="C3" library="resistor" deviceset="C-EU" device="025-024X044" value="100n"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/10" value="10K"/>
-<part name="LED1" library="led" deviceset="LED" device="5MM"/>
+<part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="220R"/>
 <part name="U$3" library="n39" deviceset="I3C_PORT" device=""/>
 <part name="U$4" library="n39" deviceset="AVR_ISP" device=""/>
@@ -13147,6 +13147,12 @@ drill 1.4 mm</description>
 <part name="U$5" library="n39" deviceset="I3C_PORT" device=""/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0204/7" value="1,5K"/>
 <part name="U$6" library="n39" deviceset="WAGO_734_262" device=""/>
+<part name="C5" library="resistor" deviceset="C-EU" device="025-024X044" value="100n"/>
+<part name="C6" library="resistor" deviceset="C-EU" device="025-024X044" value="100n"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13185,6 +13191,12 @@ drill 1.4 mm</description>
 <instance part="U$5" gate="G$1" x="-60.96" y="-17.78"/>
 <instance part="R3" gate="G$1" x="35.56" y="17.78" rot="R180"/>
 <instance part="U$6" gate="G$1" x="132.08" y="22.86" rot="R90"/>
+<instance part="C5" gate="G$1" x="-73.66" y="5.08" rot="R180"/>
+<instance part="C6" gate="G$1" x="-73.66" y="-17.78" rot="R180"/>
+<instance part="GND5" gate="1" x="-73.66" y="0"/>
+<instance part="SUPPLY5" gate="G$1" x="-73.66" y="12.7"/>
+<instance part="SUPPLY6" gate="G$1" x="-73.66" y="-10.16"/>
+<instance part="GND6" gate="1" x="-73.66" y="-22.86"/>
 </instances>
 <busses>
 </busses>
@@ -13245,6 +13257,14 @@ drill 1.4 mm</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="58.42" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -13280,6 +13300,14 @@ drill 1.4 mm</description>
 <pinref part="T1" gate="G$1" pin="E"/>
 <wire x1="53.34" y1="7.62" x2="53.34" y2="12.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -13290,14 +13318,14 @@ drill 1.4 mm</description>
 </net>
 <net name="SWITCH" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB4"/>
-<wire x1="-7.62" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
-<label x="0" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 <label x="17.78" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(CLOCK)PB3"/>
+<wire x1="-7.62" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="0" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SENSE" class="0">
@@ -13307,9 +13335,9 @@ drill 1.4 mm</description>
 <label x="25.4" y="-22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(CLOCK)PB3"/>
-<wire x1="-7.62" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
-<label x="0" y="45.72" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PB4"/>
+<wire x1="-7.62" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
+<label x="0" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
